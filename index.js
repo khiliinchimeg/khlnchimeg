@@ -15,22 +15,22 @@ Comments can make code readable
 */
 
 let string = "Hello world"
-let lastString =  string.toUpperCase();
-console.log (lastString .substring(6, 9));
+let lastString = string.toUpperCase();
+console.log(lastString.substring(6, 9));
 
 let tour = 'aZZZbZZZc';
-console.log(tour.split('ZZZ')); 
+console.log(tour.split('ZZZ'));
 
 let wer = "deviceName : macbook air -- deviceSerial : FFM3JHQ6L7 ";
 let were = wer.split("--");
-console.log(were[1].replace(":","="));
+console.log(were[1].replace(":", "="));
 
 let text = "I love HTML\n";
 let textes = text.replace("HTML", "JAVASCRIPT");
 console.log(textes.repeat(10));
 
 let challenge = "Comments can Make Code readable";
-let challengeone ="One";
+let challengeone = "One";
 let challenges = challenge.toUpperCase();
 console.log(challenges.toUpperCase());
 console.log(challenge.toLowerCase());
@@ -39,7 +39,7 @@ console.log(challenge.includes("script"));
 console.log(challenge.split(''));
 console.log(challenge.split(' '));
 
-let face = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' ;
+let face = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
 console.log(face.split(','));
 
 console.log(challenge.replace("Comments can Make Code readable", "asdfghjkjhgf ewrthnbv"));
@@ -71,13 +71,32 @@ console.log(gets.includes("on"))
 
 let we = "I hope this course is not full of jargon"
 console.log(we.includes("jargon"));
+// const now = new Date();
+// console.log("огноо" now.getDate() )
+// const year = now.getFullYear()
+// const month = now.getMonth()+1;
+// const day = now.getDate();
+// const hours = now.getHours();
+// const minutes = now.getMinutes();
+// const sec = now.getSeconds();
 
-const now = new Date();
-const year = now.getFullYear()
-const month = now.getMonth()+1;
-const day = now.getDate();
-const hours = now.getHours();
-const minutes = now.getMinutes();
-const sec = now.getSeconds();
+// console.log(`Өнөөдөр ${year} оны ${month} сарын  ${date} өдөр  ${hours} цагийн, ${minutes} ${sec}д уншиж байнав`);
 
-console.log(`Өнөөдөр ${year} оны ${month} сарын  ${date} өдөр  ${hours} цагийн, ${minutes} ${sec}д уншиж байнав`);
+//logical
+// &&and ||or !not
+1 == true;
+0 == false;
+console.log(!(1 || 0 && 1 && 1 || 0));
+
+console.log(1 || 1 || 0 && 1(1 || 0) && 1);
+console.log(!1 == 0);
+console.log(!0 == 0);
+console.log(!(0 && 1 || 1));
+
+const age = 4
+const gender = " female " // 8r angiin emegtei suragch
+
+if (18 > age &&  6 > age && gender === "male") {
+    console.log(`${age - 5}r angiin eregtei suragch`)
+} else
+console.log(age(18));
