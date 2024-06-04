@@ -557,7 +557,7 @@ Comments can make code readable
 // for (let i = 0; i < 10; i++) {
     
 //     if(i ===3) 
-//         continue;
+//         continue;  ogogdson too algasaad  urgejluulne
 //     console.log(i)
 // }
 
@@ -565,7 +565,7 @@ Comments can make code readable
 // for (let i = 0; i < 10; i++) {
     
 //     if(i ===3) 
-//         break;
+//         break; ogodson too hurtel yvna
 //     console.log(i)
 // }
 
@@ -578,20 +578,143 @@ Comments can make code readable
     //    console.log(arr[el]);
 
 
-    const arr = [1, 2, 3, 4, 5, 6, 7];
-    const arr2 = [
-        [1, 2, 3, 4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12],
-        [13, 14, 15, 16],
-    ]
-    const printDiagonal = (arr) =>{
-        for(const i in arr){
+    // const arr = [1, 2, 3, 4, 5, 6, 7];
+    // const arr2 = [
+    //     [1, 2, 3, 4],
+    //     [5, 6, 7, 8],
+    //     [9, 10, 11, 12],
+    //     [13, 14, 15, 16],
+    // ]
+    // const printDiagonal = (arr) =>{
+    //     for(const i in arr){
             // console.log(arr2[i] [arr.length - 1 - i]); //diagnalaar ni gargaj irh 4 7 10 13
             // console.log(arr.length - 1 - i)        //elememt
             // console.log(arr2[i].length - 1 + i)
-        }
-    };
+//         }
+//     };
 
 
-   printDiagonal(arr2)
+//    printDiagonal(arr2)
+
+
+// var buildArray = function (nums){
+//     ans = [];
+//     for(i = 0; i < nums.length; i++);
+    
+// }dutuu 
+
+
+
+    //6sariin4nd 
+               //CALLBACK//
+
+
+// function print(val) {
+//     console.log(print)
+// }
+// function useCallback (callback) {
+//     callback("hello" )
+// }
+// useCallback(print);
+
+// let names = ["Baagii", "Boogii", "eegii"];
+// names.forEach((name) => console.log(name));
+
+
+
+// const useForEach = (arr, callback) => {
+//    for(i = 0; i < nums.length; i++) {
+//     let element = arr[i];
+//     if(i === 1) return;
+//     callback(element);
+//    }
+    
+// }
+// useForEach(arr, console.log);
+
+// const g = names.forEach((g) =>{
+//     console.log
+// });
+
+
+// useForEach(names, (name) =>{
+//     const a = name + ", hello";
+//     console.log(a)
+// })
+
+
+      //elements 
+// let a= [1, 4, 5, 96, 8, 3]
+// const findMax = (arr) => {
+//     let max = arr[0];
+
+//     arr.forEach((el) => {
+//       if (el > max) {
+//         max = el
+//       }
+//     });
+
+//     return max;
+// };
+// console.log(findMax(a))
+
+        //index     hamgiin ih too hurtelh indekts         //array  dahij oGc bolno
+// const findMax = (arr) => {
+//     let max = arr[0];
+
+//     arr.forEach((el, index) => {
+//       if (el > arr[max]) {  //<too
+//         max = index;
+//       }
+//     });
+
+//     return max;
+// };
+// console.log(findMax([1, 5, 5, 96, 8777, 3]))
+
+// let array = [2, 4, 5, 6, 7];
+// let element = array.map((el) =>{
+//   return el * 2;
+// })
+// console.log(element);
+
+
+// 4. grades
+// let qw = [56, 68, 48, 13]
+// const e = (arr) => {
+//     let newArr = []
+//     for (i = 0; i < arr.length; i++) {
+//         if (arr[i]> 40 && arr[i]%5 >=3){
+//             let uldegdel = arr[i]%5
+//             newArr.push((arr[i] - uldegdel) + 5) 
+
+//         } else {
+//             newArr.push(arr[i])
+//         }
+//     }
+//     return newArr
+// }
+// const result = e(qw);
+//  console.log(result);
+
+// let a =[46, 67, 53, 78, 78];
+
+//     let newArr = [];
+//     let element = grades.map((grade) => {
+//      if (grade < 38) {
+//         return grade;
+//      }else if (grade % 5 >= 3) {
+//         return grade + 5 - (grade % 5) +5;
+//      }else{
+//         return grade
+//      }
+//     })
+//     console.log(newArr(a))
+
+
+const arr = [1, 2, 3, 4 ,5, 6, 7];
+const filterredArray = arr.filter((el) => {
+    return el % 2 === 1;
+});
+console.log(filterredArray);
+
