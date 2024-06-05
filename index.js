@@ -712,9 +712,104 @@ Comments can make code readable
 //     console.log(newArr(a))
 
 
-const arr = [1, 2, 3, 4 ,5, 6, 7];
-const filterredArray = arr.filter((el) => {
-    return el % 2 === 1;
-});
-console.log(filterredArray);
+// const arr = [1, 2, 3, 4 ,5, 6, 7];
+// const filterredArray = arr.filter((el) => {
+//     return el % 2 === 1;
+// });
+// console.log(filterredArray);
 
+
+
+//   6sariin 5            SORT
+
+
+//   1 bubble sort
+         //tsegtsgui toog eremleh  bgaas ih ruu
+//  const arr = [5, 49, 38, 8, 1, 10];
+
+// const swap = (arr, i, j) => {                   //i = 0       j = 2 toogii ni solini ih bga ru
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp; 
+// }
+
+// const bubbleSort = (arr, i, j) => { 
+// for(i = 0; i <arr.length; i++){
+//     for(j = 0; j < arr.length -i -1; j++){
+//     if(arr[j] > arr[j+1]) {
+//         swap(arr, j, j+1)
+//     }
+//   }
+// }
+// }
+// bubbleSort(arr)
+// console.log(arr);
+
+
+//   2 findminindex
+
+// const findMininDex = (arr, start) => {
+//     let minInDex = start;//start hdess ni ehleh vee
+// {
+//     for (let i = start + 1; i <arr.length; i++) {
+//         if(arr[i] < arr[minInDex]) {
+//             minInDex = arr[i];  //bga ni
+//         }
+//     }
+//     return minInDex;
+// }
+
+// const selectionSort = (arr) =>{
+//     for (let i = start + 1; i <arr.length; i++) {
+//        let minInDex = findMininDex(arr, i);
+//    swap(arr, i, minInDex)
+// }
+// }
+// }
+// selectionSort(arr)
+// console.log(arr);
+
+// const findMinIndex = (arr, start) => {
+//  let minIndex = start;
+//  for (let i = start + 1; i < arr.length; i++) {
+//  if (arr[i] < arr[minIndex]) {
+//  minIndex = i;
+//  }
+//  }
+//  return minIndex;
+// };
+// const selectionSort = (arr) => {
+//  for (let i = 0; i < arr.length; i++) {
+//  let minIndex = findMinIndex(arr, i);
+//  swap(arr, i, minIndex);
+//  }
+// };
+// findMinIndex(3, )
+// console.log(arr)
+
+
+
+
+// const insertionSort = (arr) => {
+//  for (let i = 1; i < arr.length; i++) {
+//  let key = arr[i];
+//  let j = i - 1;
+//  while (j >= 0 && arr[j] > key) {
+//  arr[j + 1] = arr[j];
+//  j--;
+//  }
+//  arr[j + 1] = key;
+//  }
+// };
+
+
+
+const arr = ["qw", "asd", "wertsc", "werw"];
+console.log("Before sort:", arr);
+
+// arr.sort((a, b) => a.length - b.length );
+arr.sort((a, b) =>{
+    if(a > b) return 1;
+    if(a < b)  return -1;
+})
+console.log("After sort: ", arr)
