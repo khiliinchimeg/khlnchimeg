@@ -747,27 +747,27 @@ Comments can make code readable
 
 
 //   2 findminindex
+const arr = [5, 49, 38, 8, 1, 10];
+const findMininDex = (arr, start) => {
+    let minInDex = start;//start hdess ni ehleh vee
+{
+    for (let i = start + 1; i <arr.length; i++) {
+        if(arr[i] < arr[minInDex]) {
+            minInDex = arr[i];  //bga ni
+        }
+    }
+    return minInDex;
+}
 
-// const findMininDex = (arr, start) => {
-//     let minInDex = start;//start hdess ni ehleh vee
-// {
-//     for (let i = start + 1; i <arr.length; i++) {
-//         if(arr[i] < arr[minInDex]) {
-//             minInDex = arr[i];  //bga ni
-//         }
-//     }
-//     return minInDex;
-// }
-
-// const selectionSort = (arr) =>{
-//     for (let i = start + 1; i <arr.length; i++) {
-//        let minInDex = findMininDex(arr, i);
-//    swap(arr, i, minInDex)
-// }
-// }
-// }
-// selectionSort(arr)
-// console.log(arr);
+const selectionSort = (arr) =>{
+    for (let i = start + 1; i <arr.length; i++) {
+       let minInDex = findMininDex(arr, i);
+   swap(arr, i, minInDex)
+}
+}
+}
+findMininDexx(arr)
+console.log(arr);
 
 // const findMinIndex = (arr, start) => {
 //  let minIndex = start;
@@ -804,12 +804,12 @@ Comments can make code readable
 
 
 
-const arr = ["qw", "asd", "wertsc", "werw"];
-console.log("Before sort:", arr);
+// const arr = ["qw", "asd", "wertsc", "werw"];
+// console.log("Before sort:", arr);
 
-// arr.sort((a, b) => a.length - b.length );
-arr.sort((a, b) =>{
-    if(a > b) return 1;
-    if(a < b)  return -1;
-})
-console.log("After sort: ", arr)
+// // arr.sort((a, b) => a.length - b.length );
+// arr.sort((a, b) =>{
+//     if(a > b) return 1;
+//     if(a < b)  return -1;
+// })
+// console.log("After sort: ", arr)
